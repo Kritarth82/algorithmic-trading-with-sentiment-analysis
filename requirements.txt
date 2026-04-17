@@ -1,0 +1,11 @@
+yfinance>=0.2.36
+pandas>=2.0.0
+numpy>=1.26.0
+torch>=2.2.0
+transformers>=4.40.0
+scikit-learn>=1.4.0
+tqdm>=4.66.0
+matplotlib>=3.8.0
+plotly>=5.20.0
+xgboost
+requests
