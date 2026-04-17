@@ -1,0 +1,108 @@
+{
+  "sharpe": 1.5519,
+  "sortino": 2.2817,
+  "max_drawdown": -0.0415,
+  "total_return": 0.1429,
+  "cagr": 0.1519,
+  "hit_rate": 0.5336,
+  "rolling_sharpe_mean": 1.6916,
+  "strategy_params": {
+    "buy_threshold": 0.004,
+    "sell_threshold": -0.004,
+    "hold_period": 3,
+    "transaction_cost": 0.0005,
+    "max_position": 1.0,
+    "vol_target_daily": 0.012,
+    "vol_lookback": 20,
+    "min_position_scale": 0.25,
+    "max_position_scale": 1.0,
+    "max_drawdown_soft": 0.1,
+    "drawdown_brake": 0.35,
+    "portfolio_weighting": "risk_trend",
+    "portfolio_vol_lookback": 40,
+    "portfolio_trend_lookback": 60,
+    "portfolio_trend_threshold": -0.001,
+    "portfolio_max_weight": 0.8
+  },
+  "validation_metrics": {
+    "sharpe": 2.5032,
+    "sortino": 4.7565,
+    "max_drawdown": -0.0338,
+    "total_return": 0.122,
+    "cagr": 0.3082,
+    "hit_rate": 0.537,
+    "rolling_sharpe_mean": 2.9527
+  },
+  "news_impact_report": {
+    "objective": "evaluate_news_impact_on_returns",
+    "hypothesis": "news_signal_has_limited_incremental_predictive_power",
+    "predictive_edge_score": 98.63,
+    "predictive_verdict": "strong-predictive-edge",
+    "limited_impact_evidence_score": 0.0,
+    "hypothesis_verdict": "inconclusive",
+    "summary": {
+      "avg_test_corr": 0.1259,
+      "avg_test_dir_acc": 0.5776,
+      "avg_test_mae": 0.025138,
+      "sharpe_rf0": 1.5519,
+      "tickers_evaluated": 2,
+      "avg_rows_per_ticker": 1121.0,
+      "use_finbert": false,
+      "sentiment_source": "all-data.csv + lagged_ohlcv_proxy"
+    },
+    "per_ticker": [
+      {
+        "ticker": "MSFT",
+        "n_test_samples": 230,
+        "corr": 0.0306,
+        "dir_acc": 0.6261,
+        "mae": 0.02693,
+        "selected_model": "lstm"
+      },
+      {
+        "ticker": "TCS.NS",
+        "n_test_samples": 223,
+        "corr": 0.2212,
+        "dir_acc": 0.5291,
+        "mae": 0.023346,
+        "selected_model": "lstm"
+      }
+    ]
+  },
+  "resource_report": {
+    "objective": "evaluate_news_impact_on_returns",
+    "hypothesis": "news_signal_has_limited_incremental_predictive_power",
+    "predictive_edge_score": 98.63,
+    "predictive_verdict": "strong-predictive-edge",
+    "limited_impact_evidence_score": 0.0,
+    "hypothesis_verdict": "inconclusive",
+    "summary": {
+      "avg_test_corr": 0.1259,
+      "avg_test_dir_acc": 0.5776,
+      "avg_test_mae": 0.025138,
+      "sharpe_rf0": 1.5519,
+      "tickers_evaluated": 2,
+      "avg_rows_per_ticker": 1121.0,
+      "use_finbert": false,
+      "sentiment_source": "all-data.csv + lagged_ohlcv_proxy"
+    },
+    "per_ticker": [
+      {
+        "ticker": "MSFT",
+        "n_test_samples": 230,
+        "corr": 0.0306,
+        "dir_acc": 0.6261,
+        "mae": 0.02693,
+        "selected_model": "lstm"
+      },
+      {
+        "ticker": "TCS.NS",
+        "n_test_samples": 223,
+        "corr": 0.2212,
+        "dir_acc": 0.5291,
+        "mae": 0.023346,
+        "selected_model": "lstm"
+      }
+    ]
+  }
+}

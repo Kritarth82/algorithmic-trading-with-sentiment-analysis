@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath": "/Users/krishna/Downloads/files (1) 2/files (1)/final/bin/python",
+    "python-envs.defaultEnvManager": "ms-python.python:venv",
+    "python-envs.defaultPackageManager": "ms-python.python:pip"
+}
